@@ -1,0 +1,123 @@
+/* Centraliza todo o conteúdo */
+.transactions-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do formulário */
+.transaction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input, select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #3463f0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo da tabela */
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transactions-table th, .transactions-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #333; /* Texto mais escuro para melhor contraste */
+}
+
+.transactions-table tr:nth-child(odd) {
+    background-color: #e0e0e0; /* Cinza claro */
+}
+
+.transactions-table tr:nth-child(even) {
+    background-color: #cfcfcf; /* Cinza mais escuro */
+}
+
+.transactions-table th {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilo dos botões de ação */
+.action-button {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #ddd;
+}
+
+.action-button.delete {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.action-button.delete:hover {
+    background-color: #e53935;
+}
+
+.success-snackbar {
+    background-color: #4caf50; /* Verde */
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .error-snackbar {
+    background-color: #f44336; /* Vermelho */
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+
